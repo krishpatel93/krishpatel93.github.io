@@ -169,3 +169,10 @@ h1 {
     font-size: 16px;
   }
 }
+
+/* Study page: stack university + certifications on mobile */
+@media (max-width: 900px) {
+  .study-grid {
+    grid-template-columns: 1fr;
+  }
+}
