@@ -176,3 +176,63 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Projects: clean list with right-side details link ===== */
+.section {
+  margin-top: 42px;
+}
+
+.section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  border-top: 1px solid var(--border);
+  padding: 18px 0;
+}
+
+.project-row:first-of-type {
+  border-top: 1px solid var(--border);
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.project-meta {
+  color: var(--muted);
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.project-desc {
+  margin: 0;
+  color: var(--text);
+}
+
+.details-link {
+  align-self: start;
+  white-space: nowrap;
+  color: var(--muted);
+  border-bottom: 1px solid var(--muted);
+  padding-bottom: 2px;
+}
+
+.details-link:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+@media (max-width: 700px) {
+  .project-row {
+    grid-template-columns: 1fr;
+  }
+}
+
