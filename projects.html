@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects | Krish Patel</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <strong>Krish Patel</strong>
+        <span>Cybersecurity • SOC / Cloud Security</span>
+      </div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="studies.html">Study</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="kicker">Projects</div>
+      <h1>Hands-on labs & builds</h1>
+      <p class="muted">
+        Evidence-based projects you can discuss in interviews (with tooling, tasks, and testing).
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <div class="smallcaps">SIEM / Detection</div>
+        <h2 style="margin-top:8px;">Splunk Security Monitoring Labs</h2>
+        <p class="muted" style="margin-top:6px;">Built SOC-style detection and investigation practice using real log sources.</p>
+        <ul class="list">
+          <li>Installed and configured Splunk Enterprise on an Ubuntu VM and validated Splunk Web access.</li>
+          <li>Ingested Zeek DNS/SSH logs and built SPL queries to baseline activity and identify anomalies.</li>
+          <li>Investigated patterns like frequent domain queries and failed SSH authentication attempts.</li>
+        </ul>
+        <div class="cta">
+          <a class="btn secondary" href="#" target="_blank" rel="noopener">GitHub Repo (add link)</a>
+          <a class="btn secondary" href="#" target="_blank" rel="noopener">Write-up (optional)</a>
+        </div>
+        <div class="badges">
+          <span class="badge">Splunk</span>
+          <span class="badge">Zeek Logs</span>
+          <span class="badge">SPL</span>
+          <span class="badge">Ubuntu VM</span>
+        </div>
+      </div>
+
+      <div class="card half">
+        <div class="smallcaps">Cloud Security</div>
+        <h2 style="margin-top:8px;">AWS EC2 Hardening Lab</h2>
+        <ul class="list">
+          <li>Provisioned an EC2 instance and controlled access using Security Groups.</li>
+          <li>Restricted SSH to my IP, disabled password auth and root login, and used key-based access only.</li>
+          <li>Validated changes by testing connectivity before/after access rules.</li>
+        </ul>
+        <div class="cta">
+          <a class="btn secondary" href="#" target="_blank" rel="noopener">Notes / Repo (add link)</a>
+        </div>
+        <div class="badges">
+          <span class="badge">AWS EC2</span>
+          <span class="badge">Security Groups</span>
+          <span class="badge">SSH</span>
+        </div>
+      </div>
+
+      <div class="card half">
+        <div class="smallcaps">Cloud Logging</div>
+        <h2 style="margin-top:8px;">AWS S3 Secure Bucket + Access Logging</h2>
+        <ul class="list">
+          <li>Configured S3 bucket controls and enabled server access logging to a dedicated log bucket.</li>
+          <li>Tested by uploading objects and confirming log delivery and request visibility.</li>
+          <li>Focused on secure-by-default design and traceability.</li>
+        </ul>
+        <div class="cta">
+          <a class="btn secondary" href="#" target="_blank" rel="noopener">Notes / Repo (add link)</a>
+        </div>
+        <div class="badges">
+          <span class="badge">AWS S3</span>
+          <span class="badge">Logging</span>
+          <span class="badge">Access Controls</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="smallcaps">SIEM / Monitoring</div>
+        <h2 style="margin-top:8px;">Wazuh SIEM Lab</h2>
+        <ul class="list">
+          <li>Deployed Wazuh in a lab environment and explored core monitoring and alerting capabilities.</li>
+          <li>Practiced log visibility, security events, and basic operational troubleshooting.</li>
+        </ul>
+        <div class="cta">
+          <a class="btn secondary" href="#" target="_blank" rel="noopener">Repo / Write-up (add link)</a>
+        </div>
+        <div class="badges">
+          <span class="badge">Wazuh</span>
+          <span class="badge">Linux</span>
+          <span class="badge">Monitoring</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">© <span id="year"></span> Krish Patel</div>
+  </div>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
