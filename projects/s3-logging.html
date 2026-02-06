@@ -1,0 +1,108 @@
+<!-- File: projects/s3-logging.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AWS S3 Security & Access Logging | Krish Patel</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=reset1" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand"><strong>Krish Patel</strong></div>
+        <div class="navlinks">
+          <a href="../index.html">Home</a>
+          <a href="../studies.html">Study</a>
+          <a href="../projects.html" class="active">Projects</a>
+          <a href="../experience.html">Experience</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>AWS S3 Secure Storage & Access Logging</h1>
+      <p class="subtitle">
+        Amazon S3 · Access Control · Server Access Logging · Cloud Security Fundamentals
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Overview</h2>
+      <p class="project-desc">
+        This project focused on securing cloud object storage using Amazon S3 and enabling detailed access logging
+        to support visibility, auditing, and traceability. The objective was to understand how storage misconfiguration
+        can introduce risk and how AWS-native controls can be used to prevent unauthorised access.
+      </p>
+
+      <h2>Objectives</h2>
+      <ul class="list">
+        <li>Configure secure S3 buckets following least-privilege principles.</li>
+        <li>Prevent public access to sensitive storage resources.</li>
+        <li>Enable and validate server access logging.</li>
+        <li>Understand how storage-level security contributes to cloud defence-in-depth.</li>
+      </ul>
+
+      <h2>Architecture Overview (Conceptual)</h2>
+      <ul class="list">
+        <li>Primary S3 bucket configured for secure object storage.</li>
+        <li>Dedicated log bucket receiving S3 server access logs.</li>
+        <li>AWS-managed permissions enforcing controlled access.</li>
+        <li>No public access permitted at the bucket or object level.</li>
+      </ul>
+
+      <h2>What I Did</h2>
+      <ul class="list">
+        <li>Created and configured an S3 bucket with public access fully blocked.</li>
+        <li>Reviewed and validated bucket permissions to ensure no unintended exposure.</li>
+        <li>Enabled S3 server access logging to capture detailed request-level activity.</li>
+        <li>Configured a separate destination bucket to securely store access logs.</li>
+        <li>Performed controlled object uploads and access attempts to generate log entries.</li>
+      </ul>
+
+      <h2>Validation & Testing</h2>
+      <ul class="list">
+        <li>Confirmed objects could be uploaded and accessed only through authorised actions.</li>
+        <li>Verified that public access was blocked at both bucket and object levels.</li>
+        <li>Validated that access logs were generated and stored in the logging bucket.</li>
+        <li>Reviewed log entries to understand request source, time, and action details.</li>
+      </ul>
+
+      <h2>Final Security Posture</h2>
+      <ul class="list">
+        <li><strong>Access control:</strong> public access disabled, permissions restricted.</li>
+        <li><strong>Visibility:</strong> detailed server access logs enabled and retained.</li>
+        <li><strong>Separation of duties:</strong> logging isolated in a dedicated bucket.</li>
+      </ul>
+
+      <h2>Key Learnings</h2>
+      <ul class="list">
+        <li>Hands-on understanding of S3 security controls and common misconfiguration risks.</li>
+        <li>Practical experience enabling and validating cloud-native logging.</li>
+        <li>Improved awareness of how storage security supports audit and incident response.</li>
+      </ul>
+
+      <h2>Possible Improvements</h2>
+      <ul class="list">
+        <li>Integrate S3 access logs with a SIEM for centralised monitoring.</li>
+        <li>Apply lifecycle policies to manage log retention and cost.</li>
+        <li>Encrypt objects and logs using customer-managed KMS keys.</li>
+        <li>Implement automated compliance checks using AWS Config.</li>
+      </ul>
+
+      <p style="margin-top:26px;">
+        <a class="details-link" href="../projects.html">← Back to Projects</a>
+      </p>
+    </section>
+
+    <div class="footer">© <span id="year"></span> Krish Patel</div>
+  </main>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
