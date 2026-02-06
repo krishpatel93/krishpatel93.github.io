@@ -31,146 +31,157 @@
       </p>
     </section>
 
-    <!-- SIEM / Monitoring -->
-    <section class="section">
-      <h2>SIEM & Monitoring</h2>
+<!-- ROW 1: SIEM + Web -->
+<section class="project-grid">
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">SIEM, Endpoint & Monitoring Home Lab — Wazuh</div>
-          <p class="project-meta">SIEM · Endpoint Visibility · FIM · Authentication Monitoring</p>
-          <p class="project-desc">
-            Deployed Wazuh on Ubuntu Server with Windows agents to practise alert triage, escalation, and distinguishing normal vs suspicious endpoint activity.
-          </p>
-        </div>
-        <a class="details-link" href="projects/wazuh.html">Details →</a>
+  <!-- LEFT COLUMN -->
+  <div class="project-column">
+    <h2>SIEM & Monitoring</h2>
+
+    <div class="project-row">
+      <div>
+        <div class="project-title">SIEM, Endpoint & Monitoring Home Lab — Wazuh</div>
+        <p class="project-meta">SIEM · Endpoint Visibility · FIM · Authentication Monitoring</p>
+        <p class="project-desc">
+          Deployed Wazuh on Ubuntu Server with Windows agents to practise alert triage, escalation, and distinguishing normal vs suspicious endpoint activity.
+        </p>
       </div>
+      <a class="details-link" href="projects/wazuh.html">Details →</a>
+    </div>
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">Log Analysis Home Lab — Splunk Enterprise</div>
-          <p class="project-meta">SIEM · SPL · Zeek Logs · auditd</p>
-          <p class="project-desc">
-            Installed Splunk on Ubuntu and ingested Zeek (DNS/SSH/HTTP/conn) and Linux auditd logs to build SPL investigations for brute force, suspicious domains, and anomalous behaviour.
-          </p>
-        </div>
-        <a class="details-link" href="projects/splunk.html">Details →</a>
+    <div class="project-row">
+      <div>
+        <div class="project-title">Log Analysis Home Lab — Splunk Enterprise</div>
+        <p class="project-meta">SIEM · SPL · Zeek Logs · auditd</p>
+        <p class="project-desc">
+          Installed Splunk on Ubuntu and ingested Zeek (DNS/SSH/HTTP/conn) and Linux auditd logs to build SPL investigations for brute force, suspicious domains, and anomalous behaviour.
+        </p>
       </div>
-    </section>
+      <a class="details-link" href="projects/splunk.html">Details →</a>
+    </div>
+  </div>
 
-    <!-- Web / App Security -->
-    <section class="section">
-      <h2>Web & Application Security</h2>
+  <!-- RIGHT COLUMN -->
+  <div class="project-column">
+    <h2>Web & Application Security</h2>
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">Web Application Firewall Home Lab — SafeLine (DVWA)</div>
-          <p class="project-meta">WAF · Reverse Proxy · HTTPS · SQLi Testing</p>
-          <p class="project-desc">
-            Deployed SafeLine in front of DVWA on Ubuntu (LAMP), simulated attacks from Kali, and validated blocking using rate limiting, IP rules, and WAF logs.
-          </p>
-        </div>
-        <a class="details-link" href="projects/safeline-waf.html">Details →</a>
+    <div class="project-row">
+      <div>
+        <div class="project-title">Web Application Firewall Home Lab — SafeLine (DVWA)</div>
+        <p class="project-meta">WAF · Reverse Proxy · HTTPS · SQLi Testing</p>
+        <p class="project-desc">
+          Deployed SafeLine in front of DVWA on Ubuntu (LAMP), simulated attacks from Kali, and validated blocking using rate limiting, IP rules, and WAF logs.
+        </p>
       </div>
-    </section>
+      <a class="details-link" href="projects/safeline-waf.html">Details →</a>
+    </div>
+  </div>
 
-    <!-- Networking -->
-    <section class="section">
-      <h2>Networking & Network Security</h2>
+</section>
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">Network Firewall, Wireshark & DoS Mitigation — pfSense</div>
-          <p class="project-meta">Firewall · DoS Simulation · Wireshark · Rules & Logging</p>
-          <p class="project-desc">
-            Built a segmented lab (WAN/LAN), simulated ICMP/SYN floods with hping3, analysed traffic in Wireshark, and mitigated attacks using pfSense rules and logging.
-          </p>
-        </div>
-        <a class="details-link" href="projects/pfsense-dos.html">Details →</a>
+<!-- ROW 2: Networking + University -->
+<section class="project-grid">
+
+  <!-- LEFT COLUMN -->
+  <div class="project-column">
+    <h2>Networking & Network Security</h2>
+
+    <div class="project-row">
+      <div>
+        <div class="project-title">Network Firewall, Wireshark & DoS Mitigation — pfSense</div>
+        <p class="project-meta">Firewall · DoS Simulation · Wireshark · Rules & Logging</p>
+        <p class="project-desc">
+          Built a segmented lab (WAN/LAN), simulated ICMP/SYN floods with hping3, analysed traffic in Wireshark, and mitigated attacks using pfSense rules and logging.
+        </p>
       </div>
+      <a class="details-link" href="projects/pfsense-dos.html">Details →</a>
+    </div>
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">Cisco Network Security & VPN Lab (Packet Tracer / Uni)</div>
-          <p class="project-meta">VLANs · OSPF · AAA · IPsec VPN · Zone-Based Firewall</p>
-          <p class="project-desc">
-            Built and hardened a multi-router network with secure routing, VPN connectivity, and access controls; validated connectivity and resolved routing/VPN issues.
-          </p>
-        </div>
-        <a class="details-link" href="projects/cisco-vpn.html">Details →</a>
+    <div class="project-row">
+      <div>
+        <div class="project-title">Cisco Network Security & VPN Lab (Packet Tracer / Uni)</div>
+        <p class="project-meta">VLANs · OSPF · AAA · IPsec VPN · Zone-Based Firewall</p>
+        <p class="project-desc">
+          Built and hardened a multi-router network with secure routing, VPN connectivity, and access controls; validated connectivity and resolved routing/VPN issues.
+        </p>
       </div>
-    </section>
+      <a class="details-link" href="projects/cisco-vpn.html">Details →</a>
+    </div>
+  </div>
 
-    <!-- University Projects -->
-    <section class="section">
-      <h2>University Projects</h2>
+  <!-- RIGHT COLUMN -->
+  <div class="project-column">
+    <h2>University Projects</h2>
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">Sweet Life Website (Web Development Project)</div>
-          <p class="project-meta">Web Development · UI · Pages & Forms</p>
-          <p class="project-desc">
-            Developed a website for an ice-cream shop with core pages such as home, registration, and ordering.
-          </p>
-        </div>
-        <a class="details-link" href="projects/sweet-life-web.html">Details →</a>
+    <div class="project-row">
+      <div>
+        <div class="project-title">Sweet Life Website (Web Development Project)</div>
+        <p class="project-meta">Web Development · UI · Pages & Forms</p>
+        <p class="project-desc">
+          Developed a website for an ice-cream shop with core pages such as home, registration, and ordering.
+        </p>
       </div>
+      <a class="details-link" href="projects/sweet-life-web.html">Details →</a>
+    </div>
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">Commons Café Leftover Meals System (ICT Inquiry Project)</div>
-          <p class="project-meta">Systems Design · Community Tech · Workflow</p>
-          <p class="project-desc">
-            Designed a system supporting Swinburne’s initiative to reduce food waste by offering leftover meals to students/community.
-          </p>
-        </div>
-        <a class="details-link" href="projects/commons-cafe.html">Details →</a>
+    <div class="project-row">
+      <div>
+        <div class="project-title">Commons Café Leftover Meals System (ICT Inquiry Project)</div>
+        <p class="project-meta">Systems Design · Community Tech · Workflow</p>
+        <p class="project-desc">
+          Designed a system supporting Swinburne’s initiative to reduce food waste by offering leftover meals to students/community.
+        </p>
       </div>
+      <a class="details-link" href="projects/commons-cafe.html">Details →</a>
+    </div>
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">South Pacific Programming Contest UI (ICT Design Project)</div>
-          <p class="project-meta">UI Design · Information Architecture</p>
-          <p class="project-desc">
-            Created a user interface for a fictional programming contest website, focusing on layout, navigation, and usability.
-          </p>
-        </div>
-        <a class="details-link" href="projects/sppc-ui.html">Details →</a>
+    <div class="project-row">
+      <div>
+        <div class="project-title">South Pacific Programming Contest UI (ICT Design Project)</div>
+        <p class="project-meta">UI Design · Information Architecture</p>
+        <p class="project-desc">
+          Created a user interface for a fictional programming contest website, focusing on layout, navigation, and usability.
+        </p>
       </div>
+      <a class="details-link" href="projects/sppc-ui.html">Details →</a>
+    </div>
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">Aged Care System Cloud Migration (ICT Project A)</div>
-          <p class="project-meta">Cloud Migration · Accessibility · Scalability · Compliance</p>
-          <p class="project-desc">
-            Planned a migration of an aged care management system to the cloud to improve accessibility, scalability, and compliance.
-          </p>
-        </div>
-        <a class="details-link" href="projects/aged-care-cloud.html">Details →</a>
+    <div class="project-row">
+      <div>
+        <div class="project-title">Aged Care System Cloud Migration (ICT Project A)</div>
+        <p class="project-meta">Cloud Migration · Accessibility · Scalability · Compliance</p>
+        <p class="project-desc">
+          Planned a migration of an aged care management system to the cloud to improve accessibility, scalability, and compliance.
+        </p>
       </div>
+      <a class="details-link" href="projects/aged-care-cloud.html">Details →</a>
+    </div>
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">Network Intrusion & Prevention Taxonomy (ICT Innovation Project)</div>
-          <p class="project-meta">Attack Taxonomy · Threat Concepts · Prevention</p>
-          <p class="project-desc">
-            Created a taxonomy of network-based attacks to support intrusion understanding and prevention approaches.
-          </p>
-        </div>
-        <a class="details-link" href="projects/nip-taxonomy.html">Details →</a>
+    <div class="project-row">
+      <div>
+        <div class="project-title">Network Intrusion & Prevention Taxonomy (ICT Innovation Project)</div>
+        <p class="project-meta">Attack Taxonomy · Threat Concepts · Prevention</p>
+        <p class="project-desc">
+          Created a taxonomy of network-based attacks to support intrusion understanding and prevention approaches.
+        </p>
       </div>
+      <a class="details-link" href="projects/nip-taxonomy.html">Details →</a>
+    </div>
 
-      <div class="project-row">
-        <div>
-          <div class="project-title">Client Website Redesign + SEO (ICT Project B)</div>
-          <p class="project-meta">Web Rebuild · SEO Optimisation</p>
-          <p class="project-desc">
-            Redesigned and reconstructed a client website with improvements to structure and SEO optimisation.
-          </p>
-        </div>
-        <a class="details-link" href="projects/client-seo.html">Details →</a>
+    <div class="project-row">
+      <div>
+        <div class="project-title">Client Website Redesign + SEO (ICT Project B)</div>
+        <p class="project-meta">Web Rebuild · SEO Optimisation</p>
+        <p class="project-desc">
+          Redesigned and reconstructed a client website with improvements to structure and SEO optimisation.
+        </p>
       </div>
-    </section>
+      <a class="details-link" href="projects/client-seo.html">Details →</a>
+    </div>
+  </div>
+
+</section>
+
 
     <div class="footer">© <span id="year"></span> Krish Patel</div>
   </main>
