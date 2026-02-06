@@ -1,0 +1,113 @@
+<!-- File: projects/ec2-hardening.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AWS EC2 Security Hardening | Krish Patel</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=reset1" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand"><strong>Krish Patel</strong></div>
+        <div class="navlinks">
+          <a href="../index.html">Home</a>
+          <a href="../studies.html">Study</a>
+          <a href="../projects.html" class="active">Projects</a>
+          <a href="../experience.html">Experience</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Securing an AWS EC2 Instance — Cloud Security Fundamentals</h1>
+      <p class="subtitle">
+        AWS EC2 · Amazon Linux 2023 · Security Groups · SSH Key Authentication · Linux Hardening
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Overview</h2>
+      <p class="project-desc">
+        This project focused on deploying and securing an internet-facing virtual server in Amazon Web Services (AWS).
+        The objective was to understand how cloud networking and operating system hardening work together to reduce
+        attack surface while maintaining secure administrative access.
+      </p>
+
+      <h2>Objectives</h2>
+      <ul class="list">
+        <li>Deploy a Linux-based virtual server in AWS.</li>
+        <li>Secure remote access using industry-standard authentication methods.</li>
+        <li>Restrict network access to trusted sources only.</li>
+        <li>Harden the server against common attack vectors.</li>
+        <li>Understand the interaction between AWS networking and host-level security.</li>
+      </ul>
+
+      <h2>Architecture Overview (Conceptual)</h2>
+      <ul class="list">
+        <li>Single EC2 instance running Amazon Linux 2023.</li>
+        <li>AWS Security Group acting as a network firewall.</li>
+        <li>SSH key-based authentication.</li>
+        <li>Host-level SSH hardening on the Linux server.</li>
+        <li>Access restricted to a single trusted public IP and non-root user.</li>
+      </ul>
+
+      <h2>Implementation Summary</h2>
+      <ul class="list">
+        <li>Deployed the EC2 instance in the ap-southeast-2 (Sydney) region using an IAM user.</li>
+        <li>Generated and configured an SSH key pair for secure authentication.</li>
+        <li>Configured security group rules to allow SSH access only from a trusted IP address.</li>
+        <li>Updated the operating system to apply the latest security patches.</li>
+        <li>Hardened SSH by disabling root login and password-based authentication.</li>
+        <li>Restarted and validated SSH service functionality after configuration changes.</li>
+      </ul>
+
+      <h2>Validation & Testing</h2>
+      <ul class="list">
+        <li>Verified SSH access using key-based authentication.</li>
+        <li>Confirmed password authentication was blocked.</li>
+        <li>Validated that root SSH access was disabled.</li>
+        <li>Confirmed network access was restricted correctly by the security group.</li>
+      </ul>
+
+      <h2>Final Security Posture</h2>
+      <ul class="list">
+        <li><strong>Network layer:</strong> SSH restricted to a single trusted IP.</li>
+        <li><strong>Authentication layer:</strong> SSH keys enforced, passwords disabled.</li>
+        <li><strong>Privilege layer:</strong> Root login disabled; access via non-root user.</li>
+      </ul>
+
+      <h2>Key Learnings</h2>
+      <ul class="list">
+        <li>Hands-on experience deploying and securing cloud-based servers.</li>
+        <li>Practical understanding of AWS security groups as network firewalls.</li>
+        <li>Real-world Linux hardening techniques for internet-facing systems.</li>
+        <li>Defense-in-depth using both cloud-native and host-based controls.</li>
+      </ul>
+
+      <h2>Possible Improvements</h2>
+      <ul class="list">
+        <li>Integrate CloudWatch monitoring and alerts.</li>
+        <li>Use IAM roles instead of static credentials.</li>
+        <li>Assign Elastic IPs for stable addressing.</li>
+        <li>Automate builds using infrastructure-as-code tools.</li>
+        <li>Extend security controls to AWS S3 storage.</li>
+      </ul>
+
+      <p style="margin-top:26px;">
+        <a class="details-link" href="../projects.html">← Back to Projects</a>
+      </p>
+    </section>
+
+    <div class="footer">© <span id="year"></span> Krish Patel</div>
+  </main>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
