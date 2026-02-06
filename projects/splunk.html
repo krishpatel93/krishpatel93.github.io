@@ -1,0 +1,88 @@
+<!-- File: projects/splunk.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Splunk Log Analysis Lab | Krish Patel</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=reset1" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand"><strong>Krish Patel</strong></div>
+        <div class="navlinks">
+          <a href="../index.html">Home</a>
+          <a href="../studies.html">Study</a>
+          <a href="../projects.html" class="active">Projects</a>
+          <a href="../experience.html">Experience</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Log Analysis Home Lab — Splunk Enterprise</h1>
+      <p class="subtitle">Splunk Enterprise · Ubuntu (VM) · Zeek Logs · SPL · Investigation Workflows</p>
+    </section>
+
+    <section class="section">
+      <h2>Overview</h2>
+      <p class="project-desc">
+        Built a SIEM-style log analysis lab using Splunk Enterprise on an Ubuntu virtual machine, accessed from a Windows host.
+        The objective was to ingest real security telemetry, write SPL queries, and practise investigation workflows aligned to SOC tasks.
+      </p>
+
+      <h2>Lab Setup</h2>
+      <ul class="list">
+        <li>Installed and configured Splunk Enterprise on Ubuntu (VM) with service persistence and Splunk Web access.</li>
+        <li>Prepared structured log sources for ingestion (Zeek-style logs for network activity and authentication-related events).</li>
+        <li>Configured sourcetypes/indexing to support consistent searching and analysis.</li>
+      </ul>
+
+      <h2>What I Did</h2>
+      <ul class="list">
+        <li>Ingested Zeek DNS, SSH, HTTP, and connection logs into Splunk for analysis.</li>
+        <li>Developed SPL queries to baseline behaviour and identify anomalies across network and authentication events.</li>
+        <li>Analysed DNS activity to identify frequently queried domains, top clients, and query types.</li>
+        <li>Investigated SSH activity to identify failed authentication spikes and high-risk sources.</li>
+        <li>Reviewed HTTP/connection activity to understand traffic patterns and identify unusual behaviour.</li>
+      </ul>
+
+      <h2>What I Tested and Validated</h2>
+      <ul class="list">
+        <li><strong>Baseline vs anomaly:</strong> compared normal traffic patterns against suspicious spikes and outliers.</li>
+        <li><strong>Auth visibility:</strong> confirmed detection of repeated failed SSH attempts and abnormal connection behaviour.</li>
+        <li><strong>Query confidence:</strong> validated SPL outputs by cross-checking counts, time ranges, and fields.</li>
+      </ul>
+
+      <h2>Key Outcomes</h2>
+      <ul class="list">
+        <li>Improved practical SOC skills: log ingestion, SPL searching, and investigation structure.</li>
+        <li>Built repeatable dashboards/queries for DNS and SSH activity reviews.</li>
+        <li>Strengthened understanding of how SIEM tooling supports detection and triage workflows.</li>
+      </ul>
+
+      <h2>Tools</h2>
+      <ul class="list">
+        <li>Splunk Enterprise</li>
+        <li>Ubuntu (Virtual Machine) + Windows host access</li>
+        <li>Zeek logs (DNS / SSH / HTTP / conn)</li>
+        <li>SPL (Search Processing Language)</li>
+      </ul>
+
+      <p style="margin-top:26px;">
+        <a class="details-link" href="../projects.html">← Back to Projects</a>
+      </p>
+    </section>
+
+    <div class="footer">© <span id="year"></span> Krish Patel</div>
+  </main>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
